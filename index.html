@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Justine De Padua — Front-End Developer</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress"></div>
+
+  <!-- ─────────────────── NAVIGATION ─────────────────────── -->
+  <nav id="nav">
+    <a href="#hero" class="nav-brand">CJ<span>.</span>DePadua</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="Resume.pdf" download="Christian_Justine_DePadua_Resume.pdf" class="nav-dl">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Resume
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ─────────────────── HERO ────────────────────────────── -->
+  <section id="hero">
+    <div class="hbg1"></div>
+    <div class="hbg2"></div>
+
+    <div class="hero-grid">
+      <!-- Left: Text Content -->
+      <div>
+        <div class="hero-eyebrow">Front-End Developer / Computer Engineer</div>
+        <div class="hero-photo">
+          <img src="images/profile.jpg" alt="Christian Justine De Padua">
+        </div>
+        <h1 class="hero-name">
+          Christian<br>
+          <span class="hl">Justine</span><br>
+          De Padua
+        </h1>
+        <p class="hero-role">Building clean, performant web experiences</p>
+        <p class="hero-bio">
+          Computer Engineering graduate from Cavite State University – CCAT Campus
+          with a strong passion for web development, UI/UX design, and embedded
+          systems. I write code that looks great and performs even better.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+            View My Work
+          </a>
+          <a href="Resume.pdf" download="Christian_Justine_DePadua_Resume.pdf" class="btn btn-primary"
+            style="background:#0e3a9e; border-color:#0e3a9e;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Hire Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Profile Card -->
+      <div class="hero-card">
+        <div class="hc-avatar"><img src="profile.JPG" /></div>
+        <div class="hc-name">Christian Justine De Padua</div>
+        <div class="hc-title">Front-End Developer</div>
+        <div class="hc-div"></div>
+        <div class="hc-row"><span>Location</span><span>Rosario, Cavite</span></div>
+        <div class="hc-row"><span>Degree</span><span>BS Comp. Eng.</span></div>
+        <div class="hc-row"><span>Email</span><span style="font-size:.7rem">depadua7777@gmail.com</span></div>
+        <div class="hc-row">
+          <span>Status</span>
+          <span><span class="sdot"></span>Open to Work</span>
+        </div>
+        <div class="hc-div"></div>
+        <a href="Resume.pdf" download="Christian_Justine_DePadua_Resume.pdf" class="hc-dl-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll down</span>
+      <div class="sarrow"></div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── ABOUT ───────────────────────────── -->
+  <section id="about">
+    <div class="about-wrap">
+      <!-- Left: Bio & Info -->
+      <div class="reveal-left">
+        <div class="sec-label">About Me</div>
+        <h2 class="sec-title">A developer who loves the craft</h2>
+        <p class="about-body">
+          I'm CJ — a 22-year-old Computer Engineer from Cavite State University –
+          CCAT Campus. I have a strong interest in web development, mobile application
+          design, and embedded systems &amp; IoT.<br><br>
+          My background blends software and hardware — from designing responsive web
+          interfaces to building sensor-integrated microcontroller projects. I approach
+          every challenge with curiosity and a drive for clean, efficient solutions.
+        </p>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="il">Nickname</div>
+            <div class="iv">CJ</div>
+          </div>
+          <div class="info-item">
+            <div class="il">Age</div>
+            <div class="iv">22</div>
+          </div>
+          <div class="info-item">
+            <div class="il">Location</div>
+            <div class="iv">Rosario, Cavite, PH</div>
+          </div>
+          <div class="info-item">
+            <div class="il">Citizenship</div>
+            <div class="iv">Filipino</div>
+          </div>
+          <div class="info-item">
+            <div class="il">Phone</div>
+            <div class="iv">+63 967 222 1860</div>
+          </div>
+          <div class="info-item">
+            <div class="il">Status</div>
+            <div class="iv" style="color:#16a34a; font-weight:600;">Open to Work</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Skills -->
+      <div class="reveal-right">
+        <div class="sec-label">Skills</div>
+        <h2 class="sec-title" style="font-size:1.75rem;">Technical Toolkit</h2>
+        <div style="margin-top:1.4rem;">
+          <div class="skill-group">
+            <div class="sgt">Web Development</div>
+            <div class="stags">
+              <span class="stag">HTML</span>
+              <span class="stag">CSS</span>
+              <span class="stag">JavaScript</span>
+              <span class="stag">React</span>
+              <span class="stag">Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="sgt">Design &amp; UI/UX</div>
+            <div class="stags">
+              <span class="stag">Figma</span>
+              <span class="stag">UI/UX Design</span>
+              <span class="stag">Graphic Design</span>
+              <span class="stag">Prototyping</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="sgt">Mobile &amp; Tools</div>
+            <div class="stags">
+              <span class="stag">Android Studio</span>
+              <span class="stag">Firebase</span>
+              <span class="stag">MIT App Inventor</span>
+              <span class="stag">Git</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="sgt">Embedded Systems &amp; IoT</div>
+            <div class="stags">
+              <span class="stag">Arduino IDE</span>
+              <span class="stag">ESP32/ESP8266</span>
+              <span class="stag">Sensor Integration</span>
+              <span class="stag">PCB Prototyping</span>
+              <span class="stag">Soldering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── EXPERIENCE & CERTS ──────────────── -->
+  <section id="experience">
+    <div class="reveal">
+      <div class="sec-label">Background</div>
+      <h2 class="sec-title">Experience &amp; Certifications</h2>
+    </div>
+
+    <div class="exp-grid">
+      <!-- Education & Work Timeline -->
+      <div class="reveal-left">
+        <div class="ecol-title">Education &amp; Work</div>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="tl-date">2021 – 2025</div>
+            <div class="tl-ttl">BS in Computer Engineering</div>
+            <div class="tl-org">Cavite State University – CCAT Campus · Rosario, Cavite</div>
+            <div class="tl-desc">
+              Focused on web development, embedded systems, mobile development,
+              and IoT projects. Member of ICpEP – Student Edition Region 4A (2023–2024).
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">2019 – 2021</div>
+            <div class="tl-ttl">STEM Strand · With Honors</div>
+            <div class="tl-org">Tanza National Comprehensive Senior High School · Tanza, Cavite</div>
+            <div class="tl-desc">
+              Science, Technology, Engineering, and Mathematics track.
+              Graduated with honors.
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">OJT</div>
+            <div class="tl-ttl">Admin AIDE 1</div>
+            <div class="tl-org">Tanza Water District</div>
+            <div class="tl-desc">
+              On-the-job training providing administrative and technical support
+              within a government utility organization.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="reveal-right">
+        <div class="ecol-title">Certifications &amp; Seminars</div>
+        <div class="cert-list">
+          <div class="cert-item">
+            <div class="cert-icon">✦</div>
+            <div>
+              <div class="cert-name">TESDA NC II – Computer System Services</div>
+              <div class="cert-date">June 23, 2025</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon" style="font-size:.72rem; font-weight:700;">AI</div>
+            <div>
+              <div class="cert-name">Introduction to Modern AI</div>
+              <div class="cert-date">Cisco · February 2026</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">🛡</div>
+            <div>
+              <div class="cert-name">Cyber Threat Management</div>
+              <div class="cert-date">Cisco · October 2025</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">🐍</div>
+            <div>
+              <div class="cert-name">Python Essentials 2</div>
+              <div class="cert-date">Cisco · November 2025</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">⚙</div>
+            <div>
+              <div class="cert-name">Member – ICpEP Student Edition Region 4A</div>
+              <div class="cert-date">2023 – 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── PROJECTS ────────────────────────── -->
+  <section id="projects">
+    <div class="proj-header reveal">
+      <div>
+        <div class="sec-label">Portfolio</div>
+        <h2 class="sec-title">Featured Projects</h2>
+      </div>
+      <a href="Resume.pdf" download="Christian_Justine_DePadua_Resume.pdf" class="btn btn-primary"
+        style="font-size:.78rem;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Download Full Resume
+      </a>
+    </div>
+
+    <div class="proj-grid">
+      <!-- Project 1 -->
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <span class="proj-icon">🛒</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Web Development</div>
+          <div class="proj-title">Tech Oasis</div>
+          <div class="proj-desc">
+            An online computer parts e-commerce website with product listings,
+            search functionality, and a clean shopping experience.
+          </div>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML</span>
+            <span class="proj-tag">CSS</span>
+            <span class="proj-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card reveal">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#dcfce7,#f0fdf4);">
+          <span class="proj-icon">📱</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Mobile Development</div>
+          <div class="proj-title">Android App Project</div>
+          <div class="proj-desc">
+            A mobile application built in Android Studio featuring UI/UX design
+            via Figma and real-time app-to-device communication.
+          </div>
+          <div class="proj-tags">
+            <span class="proj-tag">Android Studio</span>
+            <span class="proj-tag">Figma</span>
+            <span class="proj-tag">Firebase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-card reveal">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#fef9c3,#fefce8);">
+          <span class="proj-icon">⚡</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Embedded Systems &amp; IoT</div>
+          <div class="proj-title">ESP32 IoT System</div>
+          <div class="proj-desc">
+            Wireless sensor integration using ESP32/ESP8266 with WiFi/Bluetooth
+            communication and microcontroller programming.
+          </div>
+          <div class="proj-tags">
+            <span class="proj-tag">Arduino IDE</span>
+            <span class="proj-tag">ESP32</span>
+            <span class="proj-tag">IoT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── CONTACT ─────────────────────────── -->
+  <section id="contact">
+    <div class="contact-wrap">
+      <!-- Left: Contact Info -->
+      <div class="reveal-left">
+        <div class="sec-label">Contact</div>
+        <h2 class="sec-title">Let's work together</h2>
+        <p class="contact-desc">
+          I'm actively looking for front-end developer roles and open to freelance
+          projects. Whether you have a job opportunity, a project idea, or just want
+          to say hi — reach out!
+        </p>
+        <div class="contact-items">
+          <div class="c-item">
+            <div class="c-icon">✉</div>
+            <div>
+              <div class="c-label">Email</div>
+              <div class="c-val">depadua7777@gmail.com</div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">📞</div>
+            <div>
+              <div class="c-label">Phone</div>
+              <div class="c-val">+63 967 222 1860</div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">📍</div>
+            <div>
+              <div class="c-label">Location</div>
+              <div class="c-val">Rosario, Cavite, Philippines</div>
+            </div>
+          </div>
+        </div>
+        <a href="Resume.pdf" download="Christian_Justine_DePadua_Resume.pdf" class="dl-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download My Resume (PDF)
+        </a>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="contact-form reveal-right">
+        <div class="form-row2">
+          <div class="fg">
+            <label>Your Name</label>
+            <input type="text" placeholder="Jane Smith" />
+          </div>
+          <div class="fg">
+            <label>Email Address</label>
+            <input type="email" placeholder="jane@company.com" />
+          </div>
+        </div>
+        <div class="fg">
+          <label>Subject</label>
+          <input type="text" placeholder="Job opportunity / Project inquiry..." />
+        </div>
+        <div class="fg">
+          <label>Message</label>
+          <textarea placeholder="Tell me about the role or project..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="align-self:flex-start; cursor:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="22" y1="2" x2="11" y2="13" />
+            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+          </svg>
+          Send Message
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── FOOTER ──────────────────────────── -->
+  <footer>
+    <span class="footer-brand">CJ<span>.</span>DePadua</span>
+    <span>© 2026 Christian Justine De Padua — All rights reserved</span>
+    <div class="footer-links">
+      <a href="mailto:depadua7777@gmail.com">Email</a>
+      <a href="Resume.pdf" download="Christian_Justine_DePadua_Resume.pdf">Resume</a>
+      <a href="#hero">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
